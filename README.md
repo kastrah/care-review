@@ -2,7 +2,7 @@
 
 C.A.R.E. is a messaging review framework that checks whether a customer-facing message sounds like a person wrote it, gives the reader something useful, and ends with a reason to reply.
 
-It is a Python package with a CLI and a Python API. Zero dependencies. Python 3.11+.
+It is a Claude Code skill and a Python package with a CLI and a Python API. Zero dependencies. Python 3.11+.
 
 ## What C.A.R.E. checks
 
@@ -54,8 +54,8 @@ This tool is part of a three-skill writing stack. Each tool does one job well.
 | Tool | What it does | When to use it |
 |------|-------------|----------------|
 | [copy-pass](https://github.com/kastrah/copy-pass) | Strengthens persuasion: hooks, CTAs, objections, emotional triggers, platform fit | Before a senior writer reviews copy. Not for final cleanup. |
-| [humaniser](https://github.com/kastrah/humaniser) | Removes AI writing patterns and makes text sound natural | After copy pass. Final voice pass before publishing. |
 | care-review | Checks whether a message is conversational, actionable, richer than asked, and ends with a reason to reply | Before any customer-facing message goes out. |
+| [humaniser](https://github.com/kastrah/humaniser) | Removes AI writing patterns and makes text sound natural | After copy pass. Final voice pass before publishing. |
 
 ### If you are on care-review but need something else
 
