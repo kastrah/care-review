@@ -59,41 +59,38 @@ This tool is part of a three-skill writing stack. Each tool does one job well.
 
 ### If you are on care-review but need something else
 
-- **Your copy needs stronger hooks, CTAs, or persuasion structure** → use [copy-pass](https://github.com/kastrah/copy-pass)
-- **Your copy sounds like AI wrote it** → use [humaniser](https://github.com/kastrah/humaniser)
-- **You are writing a blog, landing page, or article** → start with [copy-pass](https://github.com/kastrah/copy-pass), then [humaniser](https://github.com/kastrah/humaniser)
+- **Your copy needs stronger hooks, CTAs, or persuasion structure** → run [copy-pass](https://github.com/kastrah/copy-pass) first
+- **Your copy sounds like AI wrote it** → run [humaniser](https://github.com/kastrah/humaniser) after
+- **You only need a conversational check** → stay here
 - **You are writing an email, SMS, WhatsApp message, or complaint response** → start here with care-review
 
 ## Workflows
 
-### Customer-facing message (email, SMS, WhatsApp, complaint response)
+The three tools work as layers. Apply the layers your text needs, in this order:
+
+### Full stack (all three layers)
 
 ```text
-Draft → care-review → revise → send
+Draft → copy-pass → care-review → humaniser → publish / send
 ```
 
-Run care-review before sending. If the message also needs persuasion work (launch email, promotional SMS), run copy-pass first:
+Start here for anything important. copy-pass strengthens persuasion. care-review checks the conversational layer. humaniser removes AI tells.
+
+### Without humaniser (no AI-tell cleanup needed)
 
 ```text
-Draft → copy-pass → care-review → revise → send
+Draft → copy-pass → care-review → send
 ```
 
-### Content for a general audience (blog, landing page, social post, article)
+Use when the text was written by a person and only needs persuasion and a conversational check.
+
+### Without copy-pass (no persuasion work needed)
 
 ```text
-Research → Draft → copy-pass → humaniser → final review → publish
+Draft → care-review → humaniser → send
 ```
 
-humaniser handles the AI-tell cleanup. copy-pass handles the persuasion structure. care-review handles the conversational check — it applies wherever the text needs to sound like a person talking to a person, regardless of audience size.
-
-### Campaign with both content and direct messages
-
-```text
-Content:  Draft → copy-pass → humaniser → publish
-Messages: Draft → care-review → send
-```
-
-Run the content and message tracks separately. The content track ends with humaniser. The message track ends with care-review. They converge at publish.
+Use when the structure is already sound but the text needs to sound more natural.
 
 ## Install
 
