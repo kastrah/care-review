@@ -1,0 +1,27 @@
+[project]
+name = "care-review"
+version = "1.0.0"
+description = "C.A.R.E. messaging review — evaluate customer-facing messages for quality and engagement."
+requires-python = ">=3.11"
+license = {text = "MIT"}
+keywords = ["messaging", "customer-support", "review", "care", "compliance"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Text Processing :: General",
+]
+
+[project.scripts]
+care-review = "care.cli:main"
+
+[project.urls]
+Repository = "https://github.com/kastrah/care-review"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
