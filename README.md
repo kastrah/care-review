@@ -84,7 +84,7 @@ Draft → copy-pass → care-review → revise → send
 Research → Draft → copy-pass → humaniser → final review → publish
 ```
 
-humaniser handles the AI-tell cleanup. copy-pass handles the persuasion structure. care-review does not apply here — it is built for messages to a specific person, not content for a general audience.
+humaniser handles the AI-tell cleanup. copy-pass handles the persuasion structure. care-review handles the conversational check — it applies wherever the text needs to sound like a person talking to a person, regardless of audience size.
 
 ### Campaign with both content and direct messages
 
