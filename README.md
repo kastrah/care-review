@@ -2,7 +2,7 @@
 
 C.A.R.E. is a messaging review framework that checks whether a customer-facing message sounds like a person wrote it, gives the reader something useful, and ends with a reason to reply.
 
-It is a skill and a Python package with a CLI and a Python API. Zero dependencies. Python 3.11+.
+You can use it three ways: as a skill that an AI agent follows when reviewing messages, as a command-line tool you run from your terminal, or as a Python library you import into your own code. Zero dependencies. Python 3.11+.
 
 ## What C.A.R.E. checks
 
