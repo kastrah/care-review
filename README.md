@@ -97,6 +97,8 @@ Run the content and message tracks separately. The content track ends with human
 
 ## Install
 
+### Claude Code
+
 ```bash
 git clone https://github.com/kastrah/care-review.git ~/.claude/skills/care-review
 ```
