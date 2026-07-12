@@ -53,15 +53,15 @@ This tool is part of a three-skill writing stack. Each tool does one job well.
 
 | Tool | What it does | When to use it |
 |------|-------------|----------------|
-| [Copy Pass](https://github.com/kastrah/copy-pass) | Strengthens persuasion: hooks, CTAs, objections, emotional triggers, platform fit | Before a senior writer reviews copy. Not for final cleanup. |
-| [Humaniser](https://github.com/kastrah/humaniser) | Removes AI writing patterns and makes text sound natural | After copy pass. Final voice pass before publishing. |
+| [copy-pass](https://github.com/kastrah/copy-pass) | Strengthens persuasion: hooks, CTAs, objections, emotional triggers, platform fit | Before a senior writer reviews copy. Not for final cleanup. |
+| [humaniser](https://github.com/kastrah/humaniser) | Removes AI writing patterns and makes text sound natural | After copy pass. Final voice pass before publishing. |
 | care-review | Checks whether a message is conversational, actionable, richer than asked, and ends with a reason to reply | Before any customer-facing message goes out. |
 
 ### If you are on care-review but need something else
 
-- **Your copy needs stronger hooks, CTAs, or persuasion structure** → use [Copy Pass](https://github.com/kastrah/copy-pass)
-- **Your copy sounds like AI wrote it** → use [Humaniser](https://github.com/kastrah/humaniser)
-- **You are writing a blog, landing page, or article** → start with [Copy Pass](https://github.com/kastrah/copy-pass), then [Humaniser](https://github.com/kastrah/humaniser)
+- **Your copy needs stronger hooks, CTAs, or persuasion structure** → use [copy-pass](https://github.com/kastrah/copy-pass)
+- **Your copy sounds like AI wrote it** → use [humaniser](https://github.com/kastrah/humaniser)
+- **You are writing a blog, landing page, or article** → start with [copy-pass](https://github.com/kastrah/copy-pass), then [humaniser](https://github.com/kastrah/humaniser)
 - **You are writing an email, SMS, WhatsApp message, or complaint response** → start here with care-review
 
 ## Workflows
@@ -72,30 +72,42 @@ This tool is part of a three-skill writing stack. Each tool does one job well.
 Draft → care-review → revise → send
 ```
 
-Run care-review before sending. If the message also needs persuasion work (launch email, promotional SMS), run Copy Pass first:
+Run care-review before sending. If the message also needs persuasion work (launch email, promotional SMS), run copy-pass first:
 
 ```text
-Draft → Copy Pass → care-review → revise → send
+Draft → copy-pass → care-review → revise → send
 ```
 
 ### Content for a general audience (blog, landing page, social post, article)
 
 ```text
-Research → Draft → Copy Pass → Humaniser → final review → publish
+Research → Draft → copy-pass → humaniser → final review → publish
 ```
 
-Humaniser handles the AI-tell cleanup. Copy Pass handles the persuasion structure. care-review does not apply here — it is built for messages to a specific person, not content for a general audience.
+humaniser handles the AI-tell cleanup. copy-pass handles the persuasion structure. care-review does not apply here — it is built for messages to a specific person, not content for a general audience.
 
 ### Campaign with both content and direct messages
 
 ```text
-Content:  Draft → Copy Pass → Humaniser → publish
+Content:  Draft → copy-pass → humaniser → publish
 Messages: Draft → care-review → send
 ```
 
-Run the content and message tracks separately. The content track ends with Humaniser. The message track ends with care-review. They converge at publish.
+Run the content and message tracks separately. The content track ends with humaniser. The message track ends with care-review. They converge at publish.
 
 ## Install
+
+### Claude Code
+
+```bash
+git clone https://github.com/kastrah/care-review.git ~/.claude/skills/care-review
+```
+
+### OpenCode / Codex CLI
+
+Place `SKILL.md` in your project root or globally at `~/.config/opencode/AGENTS.md`.
+
+### Python package
 
 ```bash
 pip install care-review
