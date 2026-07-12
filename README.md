@@ -2,7 +2,7 @@
 
 C.A.R.E. is a messaging review framework that checks whether a customer-facing message sounds like a person wrote it, gives the reader something useful, and ends with a reason to reply.
 
-It is a Claude Code skill and a Python package with a CLI and a Python API. Zero dependencies. Python 3.11+.
+It is a skill and a Python package with a CLI and a Python API. Zero dependencies. Python 3.11+.
 
 ## What C.A.R.E. checks
 
@@ -96,8 +96,6 @@ Messages: Draft → care-review → send
 Run the content and message tracks separately. The content track ends with humaniser. The message track ends with care-review. They converge at publish.
 
 ## Install
-
-### Claude Code
 
 ```bash
 git clone https://github.com/kastrah/care-review.git ~/.claude/skills/care-review
